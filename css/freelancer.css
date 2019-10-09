@@ -9760,6 +9760,12 @@ a.text-dark:hover, a.text-dark:focus {
   opacity: 1;
 }
 
+@media (min-width: 992px) {
+  .portfolio .portfolio-item .portfolio-item-caption {
+    opacity: 1;
+  }
+}
+
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
 }
