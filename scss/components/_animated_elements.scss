@@ -1,0 +1,29 @@
+/*!
+Styling for animated elemts
+ */
+
+ .hide {
+  opacity: 0;
+}
+
+.delay-1 {
+  animation-delay: 100ms;
+}
+.delay-2 {
+ animation-delay: 200ms;
+}
+.delay-3 {
+ animation-delay: 300ms;
+}
+.delay-5 {
+ animation-delay: 500ms;
+}
+
+@media (max-width: 759px) {
+ 
+ 
+ .hidden {
+   opacity: 1;
+ }
+
+}

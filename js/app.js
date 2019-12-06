@@ -1,5 +1,4 @@
-(function($) {
-  "use strict"; // Start of use strict
+
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -60,4 +59,48 @@
     });
   });
 
-})(jQuery); // End of use strict
+  // Animations on scroll
+
+  $(document).ready(function() {
+    // Check if element is scrolled into view
+    function isScrolledIntoView(elem) {
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
+  
+      var elemTop = $(elem).offset().top;
+      var elemBottom = elemTop + $(elem).height();
+  
+      return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+    // If element is scrolled into view, fade it in
+    $(window).scroll(function() {
+      $('.scroll-animations').each(function() {
+        if (isScrolledIntoView(this) === true) {
+          $(this).removeClass('hide');
+          $(this).addClass('animated flipInX');
+        }
+      });
+    });
+  
+    $(window).scroll(function() {
+      $('.scroll-bounce').each(function() {
+        if (isScrolledIntoView(this) === true) {
+          $(this).removeClass('hide');
+          $(this).addClass('animated pulse');
+        }
+      });
+    });
+  
+    $(window).scroll(function() {
+      $('.scroll-fade').each(function() {
+        if (isScrolledIntoView(this) === true) {
+          $(this).removeClass('hide');
+          $(this).addClass('animated fadeIn');
+        }
+      });
+    });
+  
+  });
+
+
+  
