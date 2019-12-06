@@ -3,3 +3,4 @@ sendgrid.env
 node_modules
 .DS_Store
 *.swp
+mail/
