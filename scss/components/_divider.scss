@@ -23,12 +23,13 @@
     color: $secondary !important;
     font-size: 2rem;
   }
-  &.divider-light {
+
+  &.divider-custom-light {
     .divider-custom-line {
-      background-color: $white;
+      background-color: $primary;
     }
     .divider-custom-icon {
-      color: $white !important;
+      color: $primary !important;
     }
   }
 }
