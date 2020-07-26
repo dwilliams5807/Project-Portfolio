@@ -4,24 +4,28 @@
   padding-bottom: 1rem;
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
+  background-color: $primary 0.5;
+  .brand-container {
+    background-color: $primary;
+  }
   .navbar-brand {
-    color: $white;
+    color: $secondary;
   }
   .navbar-nav {
     margin-top: 1rem;
     li.nav-item {
       a.nav-link {
-        color: $white;
+        color: $secondary;
+        background: $primary;
         &:hover {
           color: $primary;
+          background: $secondary;
         }
         &:active,
         &:focus {
-          color: $white;
+          color: $secondary;
         }
-        &.active {
-          color: $primary;
-        }
+     
       }
     }
   }
@@ -43,17 +47,17 @@
       margin-top: 0;
     }
     .navbar-nav > li.nav-item > a.nav-link.active {
-      color: black;
-      background: $primary;
+      color: $primary;
+      background: $secondary;
       &:active,
       &:focus,
       &:hover {
-        color: $white;
+        color: $secondary;
         background: $primary;
       }
     }
   }
-  #mainNav.navbar-shrink {
+  #mainNav.navbar-shrink { 
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     .navbar-brand {

@@ -5,10 +5,11 @@ $teal: #2893ad !default;
 $dark-blue: #342c50 !default;
 $off-white: #eff5ee !default;
 $purple: #6552ac !default;
+$blackish: #1D1D1F !default; 
 
 // Override Bootstrap primary and secondary colors
 $primary: $off-white!default;
-$secondary: $purple!default;
+$secondary: $blackish!default;
 
 // Override Bootstrap font variables
 $font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
